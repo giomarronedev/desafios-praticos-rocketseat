@@ -1,0 +1,282 @@
+:root {
+  --red: #e3646e;
+  --purple: #bb72e9;
+  --blue: #3996db;
+  --green: #82bc4f;
+  --yellow: #eabd5f;
+
+  --gray-100: #0d0e11;
+  --gray-200: #16181d;
+  --gray-300: #292c34;
+  --gray-400: #878ea1;
+  --gray-500: #c0c4ce;
+  --gray-600: #e2e4e9;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+section {
+  background-color: var(--gray-200);
+  padding: 14rem;
+}
+
+.intro {
+  height: 100vh;
+  background-image: url("./assets/Intro-bg.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hello-world {
+  font-family: "Inconsolata", monospace;
+  font-size: 2rem;
+  color: var(--gray-500);
+  font-size: 2rem;
+}
+
+.hello-world span {
+  color: var(--red);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Asap", sans-serif;
+  color: var(--gray-600);
+}
+
+h1 {
+  font-size: 5.6rem;
+  margin-block: 0.8rem 2rem;
+}
+
+h3 {
+  font-size: 2rem;
+  color: var(--red);
+  font-family: "Inconsolata", monospace;
+  margin-bottom: 0.8rem;
+  font-weight: 400;
+}
+
+h4 {
+  font-size: 1.8rem;
+}
+
+h2 {
+  font-size: 2.4rem;
+}
+
+p {
+  font-family: "Maven Pro", sans-serif;
+  font-size: 1.8rem;
+  color: var(--gray-400);
+  text-align: center;
+}
+
+.intro-card {
+  width: 88rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.intro-card img {
+  margin-bottom: 5.6rem;
+}
+
+.intro ul {
+  display: flex;
+  font-family: "Maven Pro", sans-serif;
+  font-size: 1.6rem;
+  color: var(--gray-500);
+  list-style: none;
+  gap: 1.6rem;
+  margin-top: 8rem;
+}
+
+.intro ul li {
+  background-color: var(--gray-300);
+  border-radius: 5rem;
+  padding: 0.8rem 1.6rem;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  user-select: none;
+  transition: 0.2s;
+}
+
+.intro ul li:nth-child(1):hover {
+  transform: scale(1.1);
+}
+
+.intro ul li:nth-child(2):hover {
+  background-color: rgba(227, 100, 110, 0.4);
+  transform: scale(1.1);
+}
+
+.intro ul li:nth-child(3):hover {
+  background-color: rgba(57, 150, 219, 0.4);
+  transform: scale(1.1);
+}
+
+.intro ul li:nth-child(4):hover {
+  background-color: rgba(234, 189, 95, 0.4);
+  transform: scale(1.1);
+}
+
+.intro ul li:nth-child(5):hover {
+  background-color: rgba(57, 150, 219, 0.4);
+  transform: scale(1.1);
+}
+
+.intro ul li:nth-child(6):hover {
+  background-color: rgba(130, 188, 79, 0.4);
+  transform: scale(1.1);
+}
+
+.intro a {
+  margin-top: 9.4rem;
+  transition: 0.2s;
+}
+
+.intro a:hover {
+  transform: scale(1.1);
+}
+
+.cards-container {
+  margin-top: 5.6rem;
+  display: grid;
+  grid-template-columns: 33rem 33rem 33rem;
+  justify-content: center;
+  gap: 2.4rem;
+}
+
+.card {
+  background-color: var(--gray-300);
+  padding: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  border-radius: 1.2rem;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.card .card-info p {
+  text-align: left;
+  margin-block: 0.8rem 1.6rem;
+}
+
+.card:hover {
+  transform: scale(1.03);
+  box-shadow: 0px 0px 10px var(--gray-300);
+}
+
+#jobs {
+  background-color: var(--gray-100);
+}
+
+.job {
+  border: 2px solid var(--gray-200);
+  border-radius: 1.2rem;
+  padding: 2rem;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.job-info {
+  margin-top: 2rem;
+}
+
+.job-info p {
+  text-align: left;
+  margin-top: 0.8rem;
+}
+
+.job:nth-child(1):hover {
+  border-color: rgba(187, 114, 233, 0.1);
+  background-color: rgba(187, 114, 233, 0.1);
+  transform: translateY(-1.2rem);
+}
+
+.job:nth-child(2):hover {
+  border-color: rgba(234, 189, 95, 0.1);
+  background-color: rgba(234, 189, 95, 0.1);
+  transform: translateY(-1.2rem);
+}
+
+.job:nth-child(3):hover {
+  border-color: rgba(130, 188, 79, 0.1);
+  background-color: rgba(130, 188, 79, 0.1);
+  transform: translateY(-1.2rem);
+}
+
+#contact p {
+  margin-top: 0.8rem;
+  color: var(--gray-600);
+}
+
+#contact {
+  height: 100vh;
+  background-image: url("./assets/Intro-bg.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.contact-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+  list-style: none;
+  margin-top: 4.8rem;
+}
+
+.contact-list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.6rem;
+  padding: 2rem;
+  background-color: var(--gray-300);
+  border-radius: 1.2rem;
+  width: 40rem;
+
+  color: var(--gray-600);
+  font-family: "Maven Pro", sans-serif;
+  font-size: 1.8rem;
+  transition: 0.2s;
+}
+
+.contact-list .content {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.contact-list li:hover {
+  transform: translateX(1.2rem);
+}
+
+a {
+  text-decoration: none;
+}
